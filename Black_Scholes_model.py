@@ -19,6 +19,7 @@ def generate_table(dataframe, max_rows=10):
 
 
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout = html.Div([
     html.H1('Black-Scholes Option Pricing Model', style={'textAlign': 'center', 'color': '#11111'}),
